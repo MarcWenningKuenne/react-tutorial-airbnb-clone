@@ -1,5 +1,11 @@
+section {
+    font-family: Poppins;
+    width: 550px;
+}
+
 nav {
     height: 70px;
+    width: 550px;
     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -7,4 +13,25 @@ nav {
     height: 25px;
     margin-top: 18px;
     margin-left: 18px;
+}
+
+.hero--image {
+    max-width: 400px;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.hero--heading {
+    padding-left: 25px;
+}
+
+.hero--text {
+    width: 320px;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1rem;
+    padding-left: 25px;
 }
