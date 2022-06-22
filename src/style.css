@@ -35,3 +35,60 @@ nav {
     line-height: 1rem;
     padding-left: 25px;
 }
+
+.card--div {
+    padding-left: 25px;
+    font-family: Poppins;
+    width: 200px;
+}
+
+.card--image {
+    width: 100%;
+}
+
+.card--tag {
+    position: absolute;
+    margin-top: -265px;
+    margin-left: 7px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.card--rating_div {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.card--star {
+    width: 14px;
+    height: 14px;
+    padding-right: 5px;
+}
+
+.card--rating{
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.card--number {
+    padding-right: 10px;
+}
+
+.card--text {
+    margin-top: -15px;
+    font-size: small;
+}
+
+.card--price_div {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.card--price {
+    font-weight: bolder;
+}
