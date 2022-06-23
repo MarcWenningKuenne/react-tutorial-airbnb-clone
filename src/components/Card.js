@@ -13,7 +13,7 @@ function Card(props) {
 
     return (
         <div className="card--div">
-            {badgeText != "" && <div className="card--badge">{badgeText}</div>}
+            {badgeText != undefined && <div className="card--badge">{badgeText}</div>}
             <img className="card--image" src={imgPath}/>
             <div className="card--rating_div">
                 <img className="card--star" src={star} />
