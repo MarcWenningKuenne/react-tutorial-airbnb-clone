@@ -21,20 +21,20 @@ Notes:
   this data into the component.
 */
 
-function Card() {
+function Card(props) {
     return (
         <div className="card--div">
             <img className="card--image" src={cardImage}/>
             <p className="card--tag">SOLD OUT</p>
             <div className="card--rating_div">
                 <img className="card--star" src={star} />
-                <p className="card--rating">5.0</p>
-                <p className="card--number">(6)</p>
-                <p className="card--country">USA</p>
+                <p className="card--rating">{props.rating}</p>
+                <p className="card--number">{props.reviewCount}</p>
+                <p className="card--country">{props.country}</p>
             </div>
-            <p className="card--text">Life lessons with Katie Zaferes</p>
+            <p className="card--text">{props.title}</p>
             <div className="card--price_div">
-                <p className="card--price">From $136 </p>
+                <p className="card--price">From ${props.price} </p>
                 <p> / person</p>
             </div>
         </div>
