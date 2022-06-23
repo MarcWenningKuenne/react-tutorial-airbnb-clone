@@ -18,24 +18,26 @@ still be block elements, stacked vertically. We'll add styling later.
 */
 
 function App() {
-  const dataJSX = data.map((x) => {
-    return <Card 
+  const cards = data.map((x) => {
+    return <Card
+      key = {x.id} 
       img = {x.coverImg}
       rating = {x.stats.rating}
       reviewCount = {x.stats.reviewCount}
       country = {x.location}
       title = {x.title}
       price = {x.price}
+      openSpots = {x.openSpots}
     />
   })
-  
-  console.log(dataJSX)
 
   return (
     <div>
       <Navbar />
       <Hero />
-      {dataJSX}
+      <section className="cards-list">
+        {cards}
+      </section>
     </div>
   );
 }

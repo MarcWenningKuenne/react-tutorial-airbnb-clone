@@ -1,13 +1,20 @@
 import React from "react";
-import cardImage from "../images/card-image.png";
 import star from "../images/card-star.png";
 
 function Card(props) {
     const imgPath = require(`../images/${props.img}`)
+    let badgeText
+
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.country === "Online") {
+        badgeText = "ONLINE"
+    }
+
     return (
         <div className="card--div">
+            {badgeText != "" && <div className="card--badge">{badgeText}</div>}
             <img className="card--image" src={imgPath}/>
-            <p className="card--tag">SOLD OUT</p>
             <div className="card--rating_div">
                 <img className="card--star" src={star} />
                 <p className="card--rating">{props.rating}</p>
