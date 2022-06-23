@@ -7,11 +7,10 @@ import Card from "./components/Card";
 
 
 function App() {
-  const cards = data.map((x) => {
+  const cards = data.map((item) => {
     return <Card
-      key = {x.id}
-      item = {x}
-
+      key = {item.id}
+      item = {item}
     />
   })
 

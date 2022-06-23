@@ -7,7 +7,7 @@ function Card(props) {
 
     if (props.item.openSpots === 0) {
         badgeText = "SOLD OUT"
-    } else if (props.item.country === "Online") {
+    } else if (props.item.location === "Online") {
         badgeText = "ONLINE"
     }
 
